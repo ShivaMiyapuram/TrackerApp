@@ -16,4 +16,24 @@ public class Home extends AppCompatActivity {
         Intent about = new Intent(this, SettingsActivity.class);
         startActivity(about);
     }
+    public void addFriend(View v)
+    {
+        Intent addF = new Intent(this,AddFriend.class);
+        startActivity(addF);
+
+    }
+
+    public void trackFriend(View v)
+    {
+        Intent trackF = new Intent(this,TrackFriend.class);
+        startActivity(trackF);
+
+
+    }
+    public void trackPublicUser(View v)
+    {
+        Intent trackPubUser = new Intent(this,PublicUserLocation.class);
+        startActivity(trackPubUser);
+
+    }
 }

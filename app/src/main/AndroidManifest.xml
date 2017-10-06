@@ -20,7 +20,11 @@
         <activity android:name=".Signup" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".LogOutActivity" />
-        <activity android:name=".AboutUsActivity"></activity>
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".AddFriend" />
+        <activity android:name=".TrackFriend" />
+        <activity android:name=".TrackFriendOnMap" />
+        <activity android:name=".PublicUserLocation"></activity>
     </application>
 
 </manifest>
