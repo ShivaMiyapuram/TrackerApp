@@ -1,3 +1,7 @@
+/*
+ *  Note from Wendy Eloe: to complete this portion of the project I used the following sources:
+ *  https://backendless.com/docs/android/doc.html - I used this documentation for Backendless
+ */
 package com.example.s528748.trackerapp;
 
 import android.content.Intent;

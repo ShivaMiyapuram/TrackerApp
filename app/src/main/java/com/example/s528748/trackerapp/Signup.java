@@ -1,3 +1,9 @@
+/*
+ *  Note from Wendy Eloe: to complete this portion of the project I used the following sources:
+ *  https://www.youtube.com/watch?v=e2Ozpqg8yIE - this tutorial was helpful to learn how to get the
+ *    application to connect to Backendless
+ *  https://backendless.com/docs/android/doc.html - I used this documentation for Backendless
+ */
 package com.example.s528748.trackerapp;
 
 import android.content.Intent;
