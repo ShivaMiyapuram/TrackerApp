@@ -23,6 +23,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.io.IOException;
 import java.util.List;
 
+//Author Swaroop
 
 public class TrackFriendOne extends FragmentActivity implements OnMapReadyCallback {
 
