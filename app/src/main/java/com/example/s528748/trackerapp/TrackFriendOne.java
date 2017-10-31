@@ -22,3 +22,105 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.IOException;
 import java.util.List;
+
+
+public class TrackFriendOne extends FragmentActivity implements OnMapReadyCallback {
+
+
+    private GoogleMap mMap;
+    private LocationManager manager;
+    private LocationListener locationListener;
+    private boolean shown=false;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_track_friend_one);
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+
+//        //get the location service
+//        manager = (LocationManager) getSystemService(LOCATION_SERVICE);
+//        //request the location update thru location manager
+//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+//            // TODO: Consider calling
+//            //    ActivityCompat#requestPermissions
+//            // here to request the missing permissions, and then overriding
+//            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+//            //                                          int[] grantResults)
+//            // to handle the case where the user grants the permission. See the documentation
+//            // for ActivityCompat#requestPermissions for more details.
+//            return;
+//        }
+//        locationListener = new LocationListener() {
+//            @Override
+//            public void onLocationChanged(Location location) {
+//                //get the latitude and longitude from the location
+//                double latitude = location.getLatitude();
+//                double longitude = location.getLongitude();
+//                //get the location name from latitude and longitude
+//                Geocoder geocoder = new Geocoder(getApplicationContext());
+//                try {
+//                    List<Address> addresses =
+//                            geocoder.getFromLocation(latitude, longitude, 1);
+//                    String result = addresses.get(0).getSubLocality() + ":";
+//                    result += addresses.get(0).getLocality() + ":";
+//                    result += addresses.get(0).getCountryCode();
+//                    LatLng latLng = new LatLng(latitude, longitude);
+//
+//                    if (shown == false)
+//                    {
+//                        // Marker m =
+//                        mMap.addMarker(new MarkerOptions().position(latLng).title(result));
+//                        //    m.setPosition(latLng);
+//                        mMap.setMaxZoomPreference(20);
+//                        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+//                        shown = true;
+//                    }
+//
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//
+//            @Override
+//            public void onStatusChanged(String provider, int status, Bundle extras) {
+//
+//            }
+//
+//            @Override
+//            public void onProviderEnabled(String provider) {
+//
+//            }
+//
+//            @Override
+//            public void onProviderDisabled(String provider) {
+//
+//            }
+//        };
+//        manager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
+
+    }
+
+
+    /**
+     * Manipulates the map once available.
+     * This callback is triggered when the map is ready to be used.
+     * This is where we can add markers or lines, add listeners or move the camera. In this case,
+     * we just add a marker near Sydney, Australia.
+     * If Google Play services is not installed on the device, the user will be prompted to install
+     * it inside the SupportMapFragment. This method will only be triggered once the user has
+     * installed Google Play services and returned to the app.
+     */
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+
+        // Add a marker in Sydney and move the camera
+        LatLng sydney = new LatLng(41.252553, -95.999548);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Jerry"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+    }
+}
