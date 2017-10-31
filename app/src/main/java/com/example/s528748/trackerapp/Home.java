@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
 
@@ -25,15 +26,27 @@ public class Home extends AppCompatActivity {
 
     public void trackFriend(View v)
     {
-        Intent trackF = new Intent(this,TrackFriend.class);
+        //Intent trackF = new Intent(this,ListOnline.class);
+        Intent trackF = new Intent(this,ListOfFriends.class);
         startActivity(trackF);
 
 
     }
     public void trackPublicUser(View v)
     {
-        Intent trackPubUser = new Intent(this,PublicUserLocation.class);
+        Intent trackPubUser = new Intent(this,MapsActivity.class);
         startActivity(trackPubUser);
+
+    }
+
+    public void logoutUser(View v)
+    {
+        Intent logoutuser = new Intent(this,MainActivityOne.class);
+        Toast.makeText(getApplicationContext(),
+                "Successfully logged out",
+                Toast.LENGTH_SHORT).show();
+        startActivity(logoutuser);
+
 
     }
 }

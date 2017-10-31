@@ -31,4 +31,10 @@ public class SettingsActivity extends AppCompatActivity {
         ini.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(ini);
     }
+
+    public void aboutAppp(View view) {
+        Intent logout = new Intent(this, LogOutActivity.class);
+        startActivity(logout);
+
+    }
 }

@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.s528748.trackerapp.LogOutActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:text="Tracker App"/>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This application tracks the location of users who are registered with this app. When a new user opens this app, he would be prompted with a display for login/signup. After signup, user will be directed to login screen where he can login using his mobile number or email. Once the user logged in, a home page with five buttons is displayed. First, a user has to send a request to his/her friend who is already using this app. When the person on the other side accepts the request, both can track each other’s location. On top of this, a user can make his location available public within a certain radius by changing a setting on the home screen. Users also have the option to track all those others who are publicly on this app like safe ride vehicles. We also want to include the settings, for making user to choose his location accessible or not by toggling the button on/off."
+        android:gravity="left"
+        android:padding="50dp"
+/>
+
+
+</LinearLayout>

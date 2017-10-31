@@ -1,11 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.s528748.trackerapp.MainActivityOne"
-    tools:showIn="@layout/activity_main_one">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.s528748.trackerapp.MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        android:text="Tracker App"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:gravity="center"-->
+    <!--&gt;-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/editText"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ems="10"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:hint="Username" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/editText2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Password"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:inputType="textPassword" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00B8D4"
+            android:onClick="login"/>
+        <Button
+            android:id="@+id/signupbtn"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:backgroundTint="#00B8D4"
+            android:onClick="signUp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
