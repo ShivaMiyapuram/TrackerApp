@@ -41,6 +41,7 @@ public class TrackFriendZero extends FragmentActivity implements OnMapReadyCallb
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(39.097979, -94.612842);
         mMap.addMarker(new MarkerOptions().position(sydney).title("John"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+       // mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(39.097979,-94.612842), 12.0f));
     }
 }
