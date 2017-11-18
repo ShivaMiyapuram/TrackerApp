@@ -69,15 +69,6 @@
             android:textColor="#FFFFFF"
             android:backgroundTint="#00B8D4"
             android:onClick="login"/>
-        <Button
-            android:id="@+id/signupbtn"
-            android:textColor="#FFFFFF"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Signup"
-            android:backgroundTint="#00B8D4"
-            android:onClick="signUp"/>
 
     </LinearLayout>
 
