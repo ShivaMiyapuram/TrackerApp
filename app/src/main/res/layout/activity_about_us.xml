@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.s528748.trackerapp.AboutUsActivity">
 
-    <TextView
+ <TextView
         android:id="@+id/groupMembers"
         android:layout_width="185dp"
         android:layout_height="146dp"
