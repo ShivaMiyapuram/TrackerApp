@@ -53,7 +53,7 @@ package="com.example.s528748.trackerapp">
     <activity android:name=".TrackFriendTwo" android:label="@string/title_activity_track_friend_two" />
     <activity android:name=".TrackFriendThree" android:label="@string/title_activity_track_friend_three" />
     <activity android:name=".SignupNew" />
-    <activity android:name=".MainActivityOne" android:label="@string/title_activity_main_one"
+    <activity android:name=".MainActivityOne" android:label="Tracker App"
         android:theme="@style/AppTheme">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
