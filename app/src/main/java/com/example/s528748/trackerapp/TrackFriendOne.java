@@ -1,3 +1,5 @@
+//Worked on implementing this module and supported in adding zoom factor
+
 package com.example.s528748.trackerapp;
 
 import android.Manifest;
