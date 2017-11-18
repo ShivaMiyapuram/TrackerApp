@@ -1,3 +1,6 @@
+//Worked on developing public users module and implementing them in map including zoom factors.
+
+
 package com.example.s528748.trackerapp;
 
 import android.support.v4.app.FragmentActivity;
