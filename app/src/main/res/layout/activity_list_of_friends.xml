@@ -9,12 +9,14 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_margin="50dp"
-        android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="26sp"
-        android:text="Online friends" />
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:text="Online friends"
+        android:textColor="@color/com_facebook_messenger_blue"
+        android:textSize="26sp" />
 
 
     <ListView
